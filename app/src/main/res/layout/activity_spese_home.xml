@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.SpeseHome">
+
+    <include
+        android:id="@+id/top_toolbar_ins_terapia"
+        layout="@layout/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.anychart.AnyChartView
+        android:id="@+id/shop_chart"
+        android:visibility="gone"
+        android:layout_width="393dp"
+        android:layout_height="398dp"
+        android:layout_below="@id/top_toolbar_ins_terapia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TableLayout
+        android:id="@+id/tabellaSpese"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_below="@id/top_toolbar_ins_terapia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/text_date_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:text="@string/week_shoph" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_span="2"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorMidnight"
+                android:text="@string/category_shoph" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_span="1"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorMidnight"
+                android:text="@string/spent_shoph" />
+        </TableRow>
+
+        <!-- Altre righe di dati -->
+        <TableRow>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_span="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/food_shoph" />
+
+            <TextView
+                android:id="@+id/foodtot"
+                android:textAlignment="center"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_span="2"
+                android:text="0.00" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_span="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/sanprod_shoph" />
+
+            <TextView
+                android:id="@+id/sptot"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_span="1"
+                android:textAlignment="center"
+                android:text="0.00" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_span="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/visit_shoph" />
+
+            <TextView
+                android:id="@+id/satot"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:layout_span="1"
+                android:text="0.00" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_span="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/leis_shoph" />
+
+            <TextView
+                android:id="@+id/leistot"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:layout_span="1"
+                android:text="0.00" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_span="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/other_shoph" />
+
+            <TextView
+                android:id="@+id/othtot"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:layout_span="1"
+                android:text="0.00" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/total_spent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:textSize="20dp"
+                android:textStyle="italic|bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/total_shoph" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/total_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:textStyle="italic|bold"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:text="0.00 €" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/show_chart_button"
+        android:layout_width="118dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/top_toolbar_ins_terapia"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorAlternativeMoon"
+        android:text="@string/shophome_graph"
+        app:cornerRadius = "20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="450dp"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+    <Button
+        android:id="@+id/buttonRegistraSpese"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/show_chart_button"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:text="@string/regist_shoph"
+        android:backgroundTint="@color/colorPrimary"
+        app:cornerRadius = "20dp"/>
+
+    <Button
+        android:id="@+id/buttonDettagliSpese"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/show_chart_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/det_shoph"
+        android:backgroundTint="@color/colorPrimary"
+        app:cornerRadius = "20dp"/>
+
+    <include
+        android:id="@+id/bt_HomeSpese"
+        layout="@layout/bottom_toolbar_paziente"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

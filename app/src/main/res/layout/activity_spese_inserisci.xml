@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.SpeseHome">
+
+    <include
+        android:id="@+id/ttb_rspese"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_prodotto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/black"
+        android:layout_alignStart="@+id/editTextProdottoe"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/insshop_name"/>
+
+    <EditText
+        android:id="@+id/editTextProdotto"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/tv_prodotto"
+        android:background="@drawable/border_white"
+        android:hint="@string/prodname_shopi"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/category_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextProdotto"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        app:cornerRadius = "20dp"
+        android:text="@string/category_shopi" />
+
+    <TextView
+        android:id="@+id/selected_category_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="@string/selcat_shopi"/>
+
+    <TextView
+        android:id="@+id/textQuantità"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selected_category_textview"
+        android:layout_alignStart="@id/editTextQuantità"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/quantity_shopi"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextQuantità"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textQuantità"
+        android:background="@drawable/border_white"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:hint="@string/quantity_val_shopi"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textPrezzoPezzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textQuantità"
+        android:layout_toEndOf="@id/editTextQuantità"
+        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/total_shopi"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextImporto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPrezzoPezzo"
+        android:background="@drawable/border_white"
+        android:layout_toEndOf="@id/editTextQuantità"
+        android:layout_marginTop="8dp"
+        android:layout_alignStart="@+id/textPrezzoPezzo"
+        android:layout_alignEnd="@+id/textPrezzoPezzo"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:hint="@string/total_val_shopi"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonInserisciSpese"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/editTextImporto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="@color/colorSecondaryDark"
+        android:textSize="20sp"
+        app:cornerRadius = "20dp"
+        android:text="@string/save_shopi" />
+
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+

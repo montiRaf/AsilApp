@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAlternativePowder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Include della toolbar da un altro file XML -->
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/top_toolbar_ins_terapia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_toolbar_ins_terapia"
+        android:layout_above="@id/buttonSalva"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- Altri campi di input -->
+        <TextView
+            android:id="@+id/tv_id_paziente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dati del paziente"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextIdPaziente"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/pat_ID"
+            android:background="@drawable/border_white"
+            android:drawableLeft="@drawable/ic_person"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:textSize="18dp"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextNomePaziente"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/pat_name_surname"
+            android:background="@drawable/border_white"
+            android:drawableLeft="@drawable/ic_person"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Spinner e pulsante per aggiungere allergie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/allergy_list" />
+
+        <Spinner
+            android:id="@+id/spinnerAllergie"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/buttonAggiungiAllergia"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="@string/add_allergy"
+            android:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="20dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sezione scrollabile solo per le allergie -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAllergie"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+    <!-- Pulsante per salvare le informazioni -->
+    <Button
+        android:id="@+id/buttonSalva"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/colorSecondaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        app:cornerRadius="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/save_btn"/>
+
+    <!-- Includi la bottombar -->
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+
+

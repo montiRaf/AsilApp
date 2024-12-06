@@ -1,0 +1,47 @@
+<resources>
+    <!-- Grayscale -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grayLight">#F1F1F1</color>
+    <color name="grayDark">#616161</color>
+
+    <!-- Palette alternativa su scala di blu  -->
+    <color name="colorPrimary">#1C5D99</color>
+    <color name="colorAlternativeBlack">#222222</color>
+    <color name="colorAlternativeMoon">#639FAB</color>
+    <color name="colorAlternativePowder">#BBCDE5</color>
+
+    <!-- Palette alternativa su scala di blu, più scura della precedente  -->
+    <color name="colorRichBlack">#01161E</color>
+    <color name="colorMidnight">#124559</color>
+    <color name="colorAirForceBlu">#5E8C9D</color>
+    <color name="colorAshGray">#AEC3B0</color>
+    <color name="colorBeige">#EFF6E0</color>
+
+
+    <!-- Primary Color Palette (Tonalità rilassanti, professionali) -->
+    <color name="colorPrimaryDark">#01665A</color> <!-- Teal scuro -->
+    <color name="colorAccent">#FF5252</color> <!-- Rosso vivo per elementi importanti, ma non eccessivo -->
+
+    <!-- Secondary Colors (Per evidenziare o separare sezioni) -->
+    <color name="colorSecondary">#4CAF50</color> <!-- Verde per elementi positivi (conferme, salute) -->
+    <color name="colorSecondaryDark">#388E3C</color> <!-- Verde scuro per enfasi o ombre -->
+
+    <!-- Background Colors -->
+    <color name="colorBackground">#FAFAFA</color> <!-- Bianco sporco per non affaticare la vista -->
+    <color name="colorCardBackground">#FFFFFF</color> <!-- Bianco puro -->
+    <color name="colorHomeBackground">#F0F4C3</color> <!-- Verde lime chiaro per uno sfondo rilassante e moderno -->
+
+    <!-- Alert/Status Colors -->
+    <color name="colorError">#D32F2F</color> <!-- Rosso per errori -->
+    <color name="colorSuccess">#4CAF50</color> <!-- Verde per successi o azioni completate -->
+    <color name="colorWarning">#FF9800</color> <!-- Arancione per avvisi -->
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#212121</color> <!-- Nero per testi primari -->
+    <color name="textColorSecondary">#757575</color> <!-- Grigio per testi secondari o descrizioni -->
+    <color name="textColorAccent">#FF6B6B</color> <!-- Rosso corallo per evidenziare -->
+
+    <!-- Divider and Border Colors -->
+    <color name="colorDivider">#BDBDBD</color> <!-- Grigio chiaro per divider o bordi -->
+</resources>

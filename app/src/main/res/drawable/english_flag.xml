@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="100dp"
+    android:viewportWidth="3"
+    android:viewportHeight="2">
+
+    <!-- Sfondo blu -->
+    <path
+        android:fillColor="#012169"
+        android:pathData="M0,0h3v2H0z" />
+
+    <!-- Croce diagonale bianca (sinistra in alto a destra in basso) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0L3,2M3,0L0,2"
+        android:strokeWidth="0.3"
+        android:strokeColor="#FFFFFF" />
+
+    <!-- Croce diagonale rossa (sinistra in alto a destra in basso) -->
+    <path
+        android:fillColor="#C8102E"
+        android:pathData="M0,0L3,2M3,0L0,2"
+        android:strokeWidth="0.15"
+        android:strokeColor="#C8102E" />
+
+    <!-- Croce bianca centrale orizzontale e verticale -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M1.15,0h0.7v2h-0.7zM0,0.65h3v0.7H0z" />
+
+    <!-- Croce rossa centrale -->
+    <path
+        android:fillColor="#C8102E"
+        android:pathData="M1.35,0h0.3v2h-0.3zM0,0.85h3v0.3H0z" />
+</vector>

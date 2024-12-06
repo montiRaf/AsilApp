@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.doctor.InserisciTerapia">
+
+    <!-- Include della toolbar da un altro file XML -->
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/top_toolbar_ins_terapia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ScrollView per il contenuto -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/top_toolbar_ins_terapia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_id_paziente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_data"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_alignStart="@+id/editTextIdPaziente"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/top_toolbar_ins_terapia"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/idPaziente"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/pat_ID"
+                android:inputType="text"
+                android:background="@drawable/border_white"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_below="@id/tv_id_paziente"
+                android:minHeight="56dp"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_terapia_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terap_info"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_alignStart="@+id/editTextIdPaziente"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/idPaziente"
+                android:layout_marginTop="25dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"/>
+
+            <!-- Campo di input per la descrizione della terapia -->
+            <EditText
+                android:id="@+id/editTextDiagnosi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/terap_diagnosis"
+                android:background="@drawable/border_white"
+                android:inputType="textMultiLine"
+                android:layout_below="@+id/tv_terapia_info"
+                android:minHeight="56dp"
+                android:minLines="4"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextNomeFarmaco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/terap_drug"
+                android:background="@drawable/border_white"
+                android:inputType="text"
+                android:layout_marginTop="15dp"
+                android:minHeight="56dp"
+                android:padding="16dp"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextDosaggio"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="@string/terap_dose"
+                    android:background="@drawable/border_white"
+                    android:inputType="text"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editTextPosologia"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="@string/terap_pos"
+                    android:background="@drawable/border_white"
+                    android:inputType="text"
+                    android:layout_marginTop="15dp"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextDataInizio"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="@string/terap_start_d"
+                    android:background="@drawable/border_white"
+                    android:inputType="date"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:onClick="showDataInizio" />
+
+                <EditText
+                    android:id="@+id/editTextDataFine"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="@string/terap_end_d"
+                    android:background="@drawable/border_white"
+                    android:inputType="date"
+                    android:layout_marginTop="15dp"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:onClick="showDataFine" />
+            </LinearLayout>
+
+            <!-- Bottone per salvare la terapia -->
+            <Button
+                android:id="@+id/buttonSalva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:minHeight="56dp"
+                android:layout_gravity="center"
+                android:onClick="aggiungiTerapiaOnClick"
+                android:backgroundTint="@color/colorSecondaryDark"
+                android:text="@string/terap_add"
+                app:cornerRadius = "20dp"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Includi la bottombar -->
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

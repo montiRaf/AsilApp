@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.HomePaziente">
+
+    <ImageButton
+        android:id="@+id/profileImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/rounded_button"
+        android:src="@drawable/ic_doctor3"
+        android:scaleType="centerInside"
+        android:padding="5dp"
+        app:tint="@color/colorPrimary"
+        android:elevation="6dp"
+        android:onClick="profiloMedicoOnClick"
+        android:contentDescription="Icona profilo"/>
+
+    <TextView
+        android:id="@+id/benvenuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_txt_m"
+        android:layout_below="@id/profileImageButton"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/nomeUtente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Utente"
+        android:layout_below="@id/benvenuto"
+        android:layout_gravity="start"
+        android:textStyle="italic|bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:textSize="28sp" />
+
+    <!-- Card View 1 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/benvenuto"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:onClick="listaPazientiOnCLick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/cardViewCartellaClinica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_list"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/section_description_1"
+                android:layout_width="195dp"
+                android:layout_height="46dp"
+                android:layout_below="@id/cardViewCartellaClinica"
+                android:text="@string/info_pat"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/menu_icon_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="icona1"
+                android:src="@drawable/ic_lista2" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card View 2 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/card_view_1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:onClick="registraPazienteOnClick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/section_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_patient"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/section_description_2"
+                android:layout_width="198dp"
+                android:layout_height="41dp"
+                android:layout_below="@id/section_name_2"
+                android:text="@string/info_reg_pat"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/menu_icon_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="icona2"
+                android:src="@drawable/ic_lista_paz" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Includi la bottombar -->
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

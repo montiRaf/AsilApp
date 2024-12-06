@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.SpeseHome">
+
+    <include
+        android:id="@+id/ttb_dspese"
+        layout="@layout/toolbar"
+        />
+
+    <TableLayout
+        android:id="@+id/tabellaSpese"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/week_spinner">
+
+
+        <TableRow android:id="@+id/oggetto">
+
+            <TextView
+                android:id="@+id/total_spese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/total_shopdet"
+                android:textSize="20dp" />
+        </TableRow>
+
+
+    </TableLayout>
+    <ScrollView
+        android:id="@+id/scrollSpese"
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_above="@id/btb_sdettagli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabellaSpese">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shop_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"/>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/week_shopdet"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/week_spinner"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/week_spinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ttb_dspese" />
+    <include
+        android:id="@+id/btb_sdettagli"
+        layout="@layout/bottom_toolbar_paziente"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

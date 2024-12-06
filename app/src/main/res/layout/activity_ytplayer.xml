@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.YTPlayer">
+
+    <!-- Include la top toolbar -->
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/top_toolbar_ins_terapia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- YouTubePlayerView centrato tra la toolbar e la bottombar -->
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/top_toolbar_ins_terapia"
+        android:layout_above="@+id/bottom_toolbar"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:autoPlay="false"
+        app:videoId="S0Q4gqBUs7c" />
+
+    <!-- Include la bottom toolbar -->
+    <include
+        android:id="@+id/bottom_toolbar"
+        layout="@layout/bottom_toolbar_paziente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

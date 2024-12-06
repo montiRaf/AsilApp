@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.Misurazioni">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/top_toolbar_ins_terapia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- NestedScrollView per rendere l'intero layout scrollabile -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_toolbar_paziente"
+        android:layout_below="@id/top_toolbar_ins_terapia"
+        android:padding="8dp">
+
+        <!-- Contenitore per RecyclerView e LineChart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/no_misurazioni_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/no_misurazioni"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginTop="200dp"
+                android:visibility="gone"/>
+
+            <!-- RecyclerView per le misurazioni -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewMisurazioni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp" />
+
+            <!-- LineChart posizionato sotto la RecyclerView -->
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Include per la bottombar -->
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+
+

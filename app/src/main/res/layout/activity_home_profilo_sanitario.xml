@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.HomePaziente">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Sezione dati del paziente racchiusa tra due linee -->
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/sezione_dati_paziente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/line_top"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="8dp">
+
+        <!-- Riga 0: TITOLO -->
+        <LinearLayout
+            android:id="@+id/riga_titolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Icona del dottore -->
+            <ImageView
+                android:id="@+id/imageViewDottore"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_doctor2" />
+
+            <!-- Titolo "I tuoi dati" -->
+            <TextView
+                android:id="@+id/dati_dottore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/informazioni_medico_curante"
+                android:drawablePadding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"/>
+
+        </LinearLayout>
+
+        <!-- Riga 1: ID del paziente -->
+        <LinearLayout
+            android:id="@+id/riga_id_paziente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_view_doctor_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medico_curante"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/medicoCurante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Dr. Rossi"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <!-- Riga 2: Email -->
+        <LinearLayout
+            android:id="@+id/riga_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/text_view_email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailMedico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="email@esempio.com"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Riga 3: Medico curante -->
+        <LinearLayout
+            android:id="@+id/riga_medico_curante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/text_view_id_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doc_tel"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/telMedico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="12345"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/sezione_dati_paziente"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <!-- Card View 1 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/top_toolbar_ins_terapia"
+        android:layout_marginTop="270dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="terapieOnClick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/cardViewCartellaClinica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_therapies"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/section_description_1"
+                android:layout_width="228dp"
+                android:layout_height="46dp"
+                android:layout_below="@id/cardViewCartellaClinica"
+                android:text="@string/info_therapy"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/menu_icon_1"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="icona1"
+                android:src="@drawable/ic_avatar1" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card View 2 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/card_view_1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="vaccinazioniOnClick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/section_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_vaccination"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/section_description_2"
+                android:layout_width="198dp"
+                android:layout_height="41dp"
+                android:layout_below="@id/section_name_2"
+                android:text="@string/in_questa_sezione_puoi_gestire_le_tue_vaccinazioni"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/menu_icon_2"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="icona2"
+                android:src="@drawable/ic_avatar3" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card View 3 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/card_view_2"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="allergieOnClick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/section_name_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lista_allergie"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/section_description_4"
+                android:layout_width="207dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/section_name_4"
+                android:text="@string/info_allergy"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/menu_icon_4"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="icona4"
+                android:src="@drawable/ic_avatar2" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Includi la bottombar -->
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</RelativeLayout>

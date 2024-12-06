@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.HomePaziente">
+
+    <ImageButton
+        android:id="@+id/profileImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/rounded_button"
+        android:src="@drawable/ic_profilo2"
+        app:tint="@color/colorPrimary"
+        android:elevation="6dp"
+        android:onClick="profiloOnClick"
+        android:contentDescription="Icona profilo"/>
+
+    <TextView
+        android:id="@+id/benvenuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_txt_m"
+        android:layout_below="@id/profileImageButton"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/nomeUtente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Utente (ID Utente)"
+        android:layout_below="@id/benvenuto"
+        android:layout_gravity="start"
+        android:textStyle="italic|bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/videoPlayer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/rounded_button"
+        android:elevation="6dp"
+        android:src="@drawable/ic_video"
+        android:onClick="videoOnClick"
+        android:contentDescription="Video Player"/>
+
+    <!-- Card View 1 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/benvenuto"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="profiloSanitarioOnClick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/cardViewCartellaClinica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medical_record"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/section_description_1"
+                android:layout_width="217dp"
+                android:layout_height="47dp"
+                android:layout_below="@id/cardViewCartellaClinica"
+                android:text="@string/medical_record_menu"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/menu_icon_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="icona1"
+                android:src="@drawable/ic_medical_icon" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card View 2 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/card_view_1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:onClick="speseOnClick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/section_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homespese_title"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/section_description_2"
+                android:layout_width="198dp"
+                android:layout_height="41dp"
+                android:layout_below="@id/section_name_2"
+                android:text="@string/shop_menu"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/menu_icon_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="icona2"
+                android:src="@drawable/ic_money4" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card View 3 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/card_view_2"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:onClick="centriDiAccoglienzaOnClick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/section_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/centers"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/section_description_3"
+                android:layout_width="207dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/section_name_3"
+                android:text="@string/centres_menu"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/menu_icon_3"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="icona3"
+                android:src="@drawable/ic_centri3" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Includi la bottombar -->
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

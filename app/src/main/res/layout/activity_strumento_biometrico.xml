@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAlternativePowder">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/top_toolbar_ins_terapia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Titolo -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/biomed_tit"
+        android:layout_below="@id/top_toolbar_ins_terapia"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Campo ID Paziente -->
+    <EditText
+        android:id="@+id/etPatientId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:background="@drawable/border_white"
+        android:hint="@string/pat_ID"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:drawablePadding="8dp"
+        android:inputType="text"
+        android:layout_below="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvScelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/biomed_select"
+        android:layout_below="@id/etPatientId"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Menu a tendina per selezione strumento -->
+    <Spinner
+        android:id="@+id/spinnerStrumento"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvScelta"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/strumenti_array" />
+
+    <!-- Pulsante Avvia Scansione -->
+    <Button
+        android:id="@+id/btnAvviaScansione"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="@string/biomed_start"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/spinnerStrumento"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Animazione Scansione -->
+    <ProgressBar
+        android:id="@+id/progressBarScansione"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleY="1.5"
+        android:layout_below="@id/btnAvviaScansione"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Includi la bottombar -->
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</RelativeLayout>

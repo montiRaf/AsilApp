@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/colorAlternativePowder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.doctor.RegistraPaziente">
+
+    <!-- Include della toolbar da un altro file XML -->
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/top_toolbar_ins_terapia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/top_toolbar_ins_terapia"
+        android:layout_above="@id/bottom_toolbar"
+        android:padding="16dp">
+
+    <!-- Barra di ricerca -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/cerca_paziente"
+        android:drawableLeft="@drawable/ic_cerca"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:background="@drawable/border_white"
+        android:textSize="18sp"
+        android:inputType="text" />
+
+    <!-- Lista dei risultati -->
+    <ListView
+        android:id="@+id/pazientiListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <!-- Pulsante per aggiungere il paziente -->
+    <Button
+        android:id="@+id/aggiungiPazienteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="@string/regpat_add"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorSecondaryDark"
+        app:cornerRadius = "20dp"
+        android:enabled="false"/>
+</LinearLayout>
+
+    <!-- Includi la bottombar -->
+    <include
+        android:id="@+id/bottom_toolbar"
+        layout="@layout/bottom_toolbar_paziente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+

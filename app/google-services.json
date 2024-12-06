@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "194979073238",
+    "firebase_url": "https://db-asilapp-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "db-asilapp",
+    "storage_bucket": "db-asilapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194979073238:android:6c954cf9a5d5ad43b1cd77",
+        "android_client_info": {
+          "package_name": "it.uniba.dib.sms232436"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxihDE_2ykcQvr6efzB0iwEtEkbWOIVcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:backgroundTint="@color/colorAlternativeMoon"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/nomeAllergia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:text="@string/allername_iall"
+        android:textSize="15sp"
+        android:padding="5dp"/>
+
+    <ImageButton
+        android:id="@+id/buttonRimuoviAllergia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete2"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Rimuovi Allergia"
+        android:padding="8dp"/>
+</LinearLayout>
+

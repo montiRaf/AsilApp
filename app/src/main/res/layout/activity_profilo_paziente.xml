@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.ProfiloPaziente">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/qrCode"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/my_qr_code"
+            android:onClick="qrcodeOnClick"
+            android:contentDescription="QR code"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Nome -->
+        <EditText
+            android:id="@+id/et_nome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:background="@drawable/border_white"
+            android:drawablePadding="8dp"
+            android:hint="@string/patprof_name"
+            android:inputType="text"/>
+
+        <!-- Cognome -->
+        <EditText
+            android:id="@+id/et_cognome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_white"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="8dp"
+            android:hint="@string/patprof_sur"
+            android:inputType="text"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_white"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:hint="@string/patprof_email"
+            android:inputType="textEmailAddress"/>
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_white"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="8dp"
+            android:hint="Username"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:enabled="false"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_white"
+            android:drawableLeft="@drawable/ic_pass"
+            android:drawableRight="@drawable/ic_baseline_visibility_off_24"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <!-- Bottone per modificare -->
+        <Button
+            android:id="@+id/btn_modifica"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_edit"
+            android:text="@string/patprof_edit"
+            app:cornerRadius="20dp"/>
+
+    </LinearLayout>
+
+    <!-- Includi la bottombar -->
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</RelativeLayout>

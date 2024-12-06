@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- TextView per lo strumento, posizionato in alto -->
+    <TextView
+        android:id="@+id/tvStrumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strumento"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- TextView per il valore, posizionato sotto tvStrumento e allineato a sinistra -->
+    <TextView
+        android:id="@+id/tvValore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStrumento"
+        android:text="Valore"
+        android:textSize="15sp" />
+
+    <!-- TextView per la data, posizionato a destra di tvValore e sulla stessa linea -->
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvValore"
+        android:layout_toEndOf="@id/tvValore"
+        android:layout_marginStart="90dp"
+        android:text="Data"
+        android:textSize="15sp" />
+
+    <!-- Linea di separazione sotto gli elementi -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvValore"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>
+
+

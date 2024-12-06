@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder">
+
+    <include
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="-27dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/language_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="@string/language"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- CardView per la bandiera italiana -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_italian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toStartOf="@+id/card_english"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_text">
+
+        <ImageButton
+            android:id="@+id/italian_button"
+            android:layout_width="165dp"
+            android:layout_height="124dp"
+            android:background="@drawable/card_border"
+            app:srcCompat="@drawable/italian_flag" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/italian_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/italian_lang"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/card_italian"
+        app:layout_constraintStart_toStartOf="@+id/card_italian"
+        app:layout_constraintEnd_toEndOf="@+id/card_italian" />
+
+    <!-- CardView per la bandiera inglese -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card_italian"
+        app:layout_constraintTop_toBottomOf="@+id/language_text">
+
+        <ImageButton
+            android:id="@+id/english_button"
+            android:layout_width="165dp"
+            android:layout_height="124dp"
+            android:background="@drawable/card_border"
+            app:srcCompat="@drawable/english_flag" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/english_text"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/english_lang"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/card_english"
+        app:layout_constraintStart_toStartOf="@+id/card_english"
+        app:layout_constraintEnd_toEndOf="@+id/card_english" />
+
+    <!-- Bottone di Logout -->
+    <ImageButton
+        android:id="@+id/logout_btn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="480dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logout"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/logout_text"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="575dp"
+        android:text="@string/logout"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Bottone di Eliminazione Profilo -->
+    <ImageButton
+        android:id="@+id/delete_btn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="480dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_delete"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/delete_text"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="575dp"
+        android:text="@string/del_profile"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/bottom_toolbar_paziente"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

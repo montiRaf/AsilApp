@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorAlternativePowder"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdf_reader"
+        android:layout_width="match_parent"
+        android:layout_height="743dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="0dp" />
+
+    <include layout="@layout/bottom_toolbar_paziente" />
+</RelativeLayout>

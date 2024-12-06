@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Campo Luogo Visita -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/luogo_pren"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_luogo_visita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/luogo_bar_pren"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Campo Data e Ora -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dat_ora_pren"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_data_ora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dat_ora_bar_pren"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Campo Medico Curante -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doc_pren"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_medico_curante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/doc_bar_pren"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Campo Tipologia Esame -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/examtype_pren"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_tipo_esame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/examtype_bar_pren"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Campo Nome Esame -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/examname_pren"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_nome_esame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/examtype_bar_pren"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Pulsante per salvare la prenotazione -->
+        <Button
+            android:id="@+id/btn_salva_prenotazione"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_pren"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>
+

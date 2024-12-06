@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlternativePowder"
+    tools:context=".activities.user.YTPlayer">
+
+    <!-- Include la top toolbar -->
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/top_toolbar_land"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/top_toolbar_land"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="220dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:autoPlay="false"
+        app:videoId="S0Q4gqBUs7c" />
+
+    <!-- Include la bottom toolbar -->
+    <include
+        android:id="@+id/bottom_toolbar"
+        layout="@layout/bottom_toolbar_paziente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+

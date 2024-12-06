@@ -1,0 +1,67 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:elevation="4dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:padding="12dp">
+
+        <!-- Prima riga: mittente e stato di lettura -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Nome del medico/mittente -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_from"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_mittente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_doc"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingLeft="3dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"/>
+
+            <!-- Stato del messaggio (Letto/Non letto) -->
+            <TextView
+                android:id="@+id/tv_stato_lettura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_read"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_data_invio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024-10-15 12:30"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:paddingTop="8dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

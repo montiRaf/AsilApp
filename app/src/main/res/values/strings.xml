@@ -1,0 +1,345 @@
+<resources>
+    <string name="app_name">AsilApp</string>
+    <string name="title_activity_main2" translatable="false">MainActivity2</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="settings">Settings</string>
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+
+    <string name="homespese_title">Shoppings</string>
+    <string name="homespese_category">Categoria</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="my_api_key" translatable="false">AIzaSyC_Cu_f60rZv5MEIpvwYJllKtKAw9AlAco</string>
+    <string name="title_activity_login" translatable="false">Login</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">Welcome!</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum" translatable="false">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="language">Select Language</string>
+    <string name="credits">Credits</string>
+    <string name="view">View</string>
+    <string name="italian_lang">Italian</string>
+    <string name="english_lang">English</string>
+    <string name="logout" translatable="false">Logout</string>
+    <string name="del_profile">Delete Profile</string>
+    <string name="str_name">Structure Name</string>
+    <string name="str_city">City</string>
+    <string name="str_prov">Province</string>
+    <string name="str_CAP">H. Number</string>
+    <string name="str_address">Address</string>
+    <string name="str_capacity">Capacity</string>
+    <string name="str_description">Structure Description</string>
+    <string name="view_map">View Map</string>
+    <string name="str_view_docs">View Documents</string>
+    <string name="tb_settings">Settings</string>
+    <string name="tb_profile">Profile</string>
+    <string name="tb_home" translatable="false">Home</string>
+    <string name="tb_shoppings">Shop.</string>
+    <string name="tb_sanprof">S. Profile</string>
+    <string name="tb_scan">Bio. Scan</string>
+    <string name="tb_pat">Patients</string>
+    <string name="speshome_tit">User Shoppings</string>
+    <string name="spesdett_tit">Shoppings Details</string>
+    <string name="spesagg_tit">Add Shopping</string>
+    <string name="strhome_tit">Home Structure</string>
+    <string name="strrule_tit">Rule Document</string>
+    <string name="strmap_tit">Structure Map</string>
+    <string name="lasfeed_tit">Leave a Feedback</string>
+    <string name="feedstr">Feedback for Structure</string>
+    <string name="feedserv">Feedback for the Sanitary Service</string>
+    <string name="feedcompile">Compile Feedback</string>
+    <string name="login_username">Username</string>
+    <string name="log_psw" translatable="false">Password</string>
+    <string name="log_logbtn" translatable="false">LOGIN</string>
+    <string name="log_loginqr">Login with QR Code</string>
+    <string name="log_notreg">You are not registred? Sign Up!</string>
+    <string name="luogo_pren">Visit Place</string>
+    <string name="luogo_bar_pren">Insert the Visit Place</string>
+    <string name="dat_ora_pren">Date and Time</string>
+    <string name="dat_ora_bar_pren">Insert Date and Time</string>
+    <string name="doc_pren">Doctor</string>
+    <string name="doc_bar_pren">Insert Doctor\'s name</string>
+    <string name="examtype_pren">Exam Type</string>
+    <string name="examtype_bar_pren">Insert Exam Type</string>
+    <string name="examname_pren">Exam Name</string>
+    <string name="examname_bar_pren">Insert Exam Name</string>
+    <string name="save_pren">Save Appointment</string>
+    <string name="title_reg">Register</string>
+    <string name="name_reg">Name</string>
+    <string name="surname_reg">Surname</string>
+    <string name="email_reg" translatable="false">E-Mail</string>
+    <string name="user_reg">Username</string>
+    <string name="paz_reg">Patient</string>
+    <string name="doc_reg">Doctor</string>
+    <string name="save_reg">Sign Up</string>
+    <string name="log_reg">Are you already registered? Log in!</string>
+    <string name="psw_reg" translatable="false">Password</string>
+    <string name="title_shopdet">Shoppings Details</string>
+    <string name="week_shopdet">Week</string>
+    <string name="total_shopdet">Total Spent</string>
+    <string name="title_shoph">Shoppings</string>
+    <string name="week_shoph">Loading...</string>
+    <string name="category_shoph">Category</string>
+    <string name="spent_shoph">Spent (€)</string>
+    <string name="food_shoph">Food</string>
+    <string name="sanprod_shoph">Sanitary Products</string>
+    <string name="visit_shoph">Sanitary Appointments</string>
+    <string name="leis_shoph">Leisure</string>
+    <string name="total_shoph">TOTAL SPENT</string>
+    <string name="regist_shoph">Register Shopping</string>
+    <string name="det_shoph">Shopping Details</string>
+    <string name="other_shoph">Other</string>
+    <string name="title_shopi">Register Shopping</string>
+    <string name="prodname_shopi">Product Name</string>
+    <string name="category_shopi">Select Category</string>
+    <string name="quantity_shopi">Quantity</string>
+    <string name="quantity_val_shopi">Q.ty</string>
+    <string name="total_shopi">Total Spent (€)</string>
+    <string name="total_val_shopi">Price</string>
+    <string name="save_shopi">Register Shopping</string>
+    <string name="selcat_shopi">Selected Category: None</string>
+    <string name="allername_iall">Allergy Name</string>
+    <string name="visitplace_ip">Visit Place</string>
+    <string name="date_ip">Date and Time</string>
+    <string name="doc_ip">Doctor</string>
+    <string name="examtype_ip">Exam Type</string>
+    <string name="examname_ip">Exam Name</string>
+    <string name="product_is">Product Name</string>
+    <string name="medical_record">Medical record</string>
+    <string name="medical_record_menu">In this section you can view your medical record</string>
+    <string name="shop_menu">In this section you can manage your expenses</string>
+    <string name="welcome_txt_f">Welcome</string>
+    <string name="centers">Reception centers</string>
+    <string name="centres_menu">In this section you can view the available reception centers</string>
+    <string name="welcome_txt_m">Welcome</string>
+    <string name="checkEmailReq">L\'email è obbligatoria!</string>
+    <string name="checkEmail">Inserisci un indirizzo email valido</string>
+    <string name="failedPassword">Si è verificato un errore</string>
+    <string name="checkEmailResetPass">Controlla la tua email per reimpostare la password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="strumenti_array">
+        <item>Termometro</item>
+        <item>Sfigmomanometro</item>
+        <item>Misuratore di pressione</item>
+        <item>Glucometro</item>
+        <item>Bilancia</item>
+        <item>Pulsossimetro</item>
+        <item>Elettrocardiografo</item>
+    </string-array>
+    <string name="lista_allergie">Allergy List</string>
+    <string name="feedback">Feedback</string>
+    <string name="add_therapy">Add Therapy</string>
+    <string name="add_vaccination">Add Vaccination</string>
+    <string name="send_message">Send Message</string>
+    <string name="doc_reader">Document Reader</string>
+    <string name="add_allergy">Add Allergy</string>
+    <string name="message">Messages</string>
+    <string name="patient_list">Patient List</string>
+    <string name="list_therapies">Therapies List</string>
+    <string name="list_vaccination">Vaccination List</string>
+    <string name="map">Map</string>
+    <string name="measurements">Measurements</string>
+    <string name="qr_code">QR Code</string>
+    <string name="register_patient">Register patient</string>
+    <string name="sos">Emergency Calls</string>
+    <string name="video">Video Player</string>
+    <string name="no_doc">You don\'t have a doctor</string>
+    <string name="i_tuoi_dati">Your data</string>
+    <string name="medico_curante">Doctor:</string>
+    <string name="info_therapy">In this section you can view the therapies to follow</string>
+    <string name="info_pat">In this section you can view your patient list</string>
+    <string name="info_reg_pat">In this section you can register a patient</string>
+    <string name="in_questa_sezione_puoi_gestire_le_tue_vaccinazioni">In this section you can manage your vaccinations</string>
+    <string name="info_allergy">In this section you can view your allergies</string>
+    <string name="farmaco">Medicine:</string>
+    <string name="dosaggio">Dosage:</string>
+    <string name="posologia">Posology:</string>
+    <string name="inizio">Start:</string>
+    <string name="fine">End:</string>
+    <string name="no_terapie">At the moment, you have no therapies</string>
+    <string name="no_vaccinazioni">You currently have no vaccinations</string>
+    <string name="nome">Name:</string>
+    <string name="data">Date:</string>
+    <string name="richiamo">Booster:</string>
+    <string name="no_richiamo">No follow-up dose</string>
+    <string name="arachidi">Peanuts</string>
+    <string name="crostacei">Shellfish</string>
+    <string name="fragole">Strawberry</string>
+    <string name="glutine">Gluten</string>
+    <string name="lieviti">Yeast</string>
+    <string name="mele">Apple</string>
+    <string name="molluschi">Mollusk</string>
+    <string name="patate">Potato</string>
+    <string name="pesce">Fish</string>
+    <string name="polline">Pollen</string>
+    <string name="uova">Egg</string>
+    <string name="pomodoro">Tomato</string>
+    <string name="latte">Milk</string>
+    <string name="banana">Banana</string>
+    <string name="paziente_non_trovato">Patient not found!</string>
+    <string name="no_misurazioni">You don\'t have any measurements recorded yet</string>
+    <string name="termometro">Thermometer</string>
+    <string name="glucometro">Glucometer</string>
+    <string name="bilancia">Balance</string>
+    <string name="pulsossimetro">Pulse oximeter</string>
+    <string name="elettrocardiografo">Electrocardiograph</string>
+    <string name="no_pat">You don\'t have any patients at the moment</string>
+    <string name="cerca_paziente">Search Patient</string>
+    <string name="num_tel">Phone number</string>
+    <string name="compila_campi">Fill in all the fields!</string>
+    <string name="succ_profilo">The profile has been successfully updated.</string>
+    <string name="successo">Success</string>
+    <string name="errore">Error</string>
+    <string name="errore_profilo">Profile update failed.</string>
+    <string name="modifica_dati">EDIT DATA</string>
+    <string name="qr_code_save">QR Code saved in gallery</string>
+    <string name="error_qr_code">Error saving image</string>
+    <string name="strumento">Biomedical instrument</string>
+    <string name="error_doc">Error in doctor recovery</string>
+    <string name="conferma">Confirm deletion</string>
+    <string name="conferma_dialog">Are you sure you want to delete your profile?</string>
+    <string name="si">Yes</string>
+    <string name="doc_tel">Telephone:</string>
+    <string name="pat_ID">Patient ID</string>
+    <string name="pat_name_surname">Name and Surname</string>
+    <string name="allergy_list">Allergy List</string>
+    <string name="save_btn">SAVE</string>
+    <string name="leave_feedback">Leave a Feedback</string>
+    <string name="write_feedback">Write a Feedback</string>
+    <string name="send_feedback">SEND FEEDBACK</string>
+    <string name="patient_data">Patient Data</string>
+    <string name="terap_info">Therapy Information</string>
+    <string name="terap_diagnosis">Diagnosis</string>
+    <string name="terap_drug">Drug Name</string>
+    <string name="terap_dose">Dosage</string>
+    <string name="terap_pos">Posology</string>
+    <string name="terap_start_d">Start Date</string>
+    <string name="terap_end_d">End Date</string>
+    <string name="terap_add">ADD THERAPY</string>
+    <string name="vaccine_info">Vaccination Informations</string>
+    <string name="vaccine_namendose">Vaccine Name and Dosage</string>
+    <string name="vaccine_doc">Doctor\'s Name</string>
+    <string name="vaccine_date">Vaccination Date</string>
+    <string name="vaccine_recall">Necessary Recall</string>
+    <string name="vaccine_recall_int">Recall Interval (e.g. 6 months)</string>
+    <string name="vaccine_add">ADD VACCINATION</string>
+    <string name="msg_message">Message</string>
+    <string name="msg_writemsg">Write a Message</string>
+    <string name="msg_send">SEND MESSAGE</string>
+    <string name="logine_retrpsw">Recover Password</string>
+    <string name="forgpsw_tit">Enter your email to reset your password</string>
+    <string name="forgpsw_reset">Reset</string>
+    <string name="patprof_name">Name</string>
+    <string name="patprof_sur">Surname</string>
+    <string name="patprof_add">Address</string>
+    <string name="patprof_email">E-Mail</string>
+    <string name="patprof_edit">EDIT DATA</string>
+    <string name="qr_save">SAVE QR CODE</string>
+    <string name="regpat_add">Add Patient</string>
+    <string name="reg_male">Male</string>
+    <string name="reg_female">Female</string>
+    <string name="reg_birth">Date of Birth</string>
+    <string name="sos_police">Call the Police</string>
+    <string name="sos_ff">Call the Fire Brigade</string>
+    <string name="sos_amb">Call an Ambulance</string>
+    <string name="shophome_graph">Show Graph</string>
+    <string name="insshop_name">Product Name</string>
+    <string name="biomed_tit">Insert Biomedical Measurements</string>
+    <string name="biomed_select">Select Tool</string>
+    <string name="biomed_start">START SCAN</string>
+    <string name="gespat_tit">Patient Management</string>
+    <string name="gespat_terap">Insert Therapy</string>
+    <string name="gespat_all">Insert Allergy</string>
+    <string name="gespat_vac">Insert Vaccination</string>
+    <string name="msg_tit">Message</string>
+    <string name="msg_det">Message Detail</string>
+    <string name="msg_from">From:</string>
+    <string name="msg_doc">Doctor Name</string>
+    <string name="msg_read">Not Read</string>
+    <string name="pat_name">"Name: "</string>
+    <string name="pat_surname">Surname:</string>
+    <string name="pat_age">Age:</string>
+    <string name="doc_tit">Doc.</string>
+    <string name="doc_med">Medicine:</string>
+    <string name="doc_dos">Dosage:</string>
+    <string name="doc_pos">Posology:</string>
+    <string name="doc_start">Start:</string>
+    <string name="no_allergie">You have no registered allergies</string>
+    <string name="no_messaggi">There are no messages</string>
+    <string name="error_setting">Error while deleting from database</string>
+    <string name="no_doc_setting">No doctors found</string>
+    <string name="error_db">Database access error:</string>
+    <string name="delete_profile">Profile successfully deleted</string>
+    <string name="save_allergie">Allergies Successfully Saved</string>
+    <string name="errore_allergie">Error saving allergies</string>
+    <string name="allergie_error">Patient control error</string>
+    <string name="er_recupero_paziente">Patient recovery error</string>
+    <string name="successo_terapia">Therapy inserted successfully</string>
+    <string name="successo_vaccinazione">Vaccination saved successfully</string>
+    <string name="er_codice_paziente">Invalid patient ID</string>
+    <string name="invio_mess">Message sent successfully</string>
+    <string name="add_paziente">Patient added successfully</string>
+    <string name="id_paziente_mancante">Enter patient ID</string>
+    <string name="informazioni_medico_curante">Information from your doctor</string>
+    <string name="dati_inseriti_succ">Data entered successfully!</string>
+    <string name="err_inserimento_dati">Error while entering data</string>
+    <string name="qr_salvato">QR Code saved in gallery</string>
+    <string name="err_salvataggio_qr">Error saving image</string>
+    <string name="no_spese">There are no charges available!</string>
+
+
+</resources>
